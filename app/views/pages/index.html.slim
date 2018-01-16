@@ -1,0 +1,243 @@
+.banner
+  .header
+    .logo
+      a href="index.html"
+        = image_tag 'logo.jpg'
+    .top-menu
+      span.menu
+      ul.navig
+        li.active
+          a href="index.html"  Home
+        li
+          a href="about.html"  About
+        li
+          a href="program.html"  Programs
+        li
+          a href="blog.html"  Blog
+        li
+          a href="gallery.html"  Gallery
+        li
+          a href="contact.html"  Contact
+    .clearfix
+  .slider
+    .caption
+      .container
+        .callbacks_container
+          ul#slider.rslides
+            li
+              h3 Nam eget erat condimentum, gravida felis vel feugiat nisi
+            li
+              h3 Quisque egestas mi tellus porta bibendum dignissim euismod.
+            li
+              h3 Aenean nec enim pharetra felis malesuada scelerisque eget at felis.
+          .clearfix
+  .banner-grids
+    .container
+      .col-md-4.banner-grid
+        h3 Blog Feed
+        .banner-grid-sec
+          .grid_info
+            .blg-pic
+              = image_tag 'm1.jpg', class: 'img-responsive'
+            .blg-pic-info
+              h4
+                a href="#"  Vivamus tempus ligula
+              p Aliquam sem velit, rhoncus sed arcu at curabitur et erat eu viverra.
+            .clearfix
+          .grid_info
+            .blg-pic
+              = image_tag 'm2.jpg', class: 'img-responsive'
+            .blg-pic-info
+              h4
+                a href="#"  Vivamus tempus ligula
+              p Aliquam sem velit, rhoncus sed arcu at curabitur et erat eu viverra.
+            .clearfix
+          .more
+            a href="blog.html"  See more from the Blog
+      .col-md-4.banner-grid
+        h3 News Feed
+        .banner-grid-sec
+          .news-grid
+            h4
+              a href="#"  Vivamus tempus ligula
+            p Aliquam sem velit, rhoncus sed arcu eu viverra.
+          .news-grid
+            h4
+              a href="#"  Vivamus tempus ligula
+            p Aliquam sem velit, rhoncus sed arcu eu viverra.
+          .news-grid
+            h4
+              a href="#"  Vivamus tempus ligula
+            p Aliquam sem velit, rhoncus sed arcu eu viverra.
+          .news-grid
+            h4
+              a href="#"  Vivamus tempus ligula
+            p Aliquam sem velit, rhoncus sed arcu eu viverra.
+      .col-md-4.banner-grid
+        h3 News Letter
+        .banner-grid-sec.news_sec
+          .news-ltr
+            h4
+              a href="#"  Pellentesque sed arcu lacinia
+            p Aliquam sem velit, rhoncus sed arcu eu viverra. Suspendisse lacus posuere ultricies turpis.
+          form
+            input placeholder=("Email Address*") required="" type="text" /
+            input type="submit" value="SEND" /
+      .clearfix
+/!
+.welcome
+  .container
+    h2 Duis aliquet in ex nec elementum. In commodo molestie libero ornare elementum.
+    .welcm_sec
+      .col-md-9.campus
+        .campus_head
+          h3 Welcome
+          p
+            | Nunc justo sapien, cursus at urna at, placerat porttitor tellus. Aliquam vehicula tellus nunc,
+            | id pretium lacus placerat dignissim. Donec quis dui sed lacus vulputate scelerisque a sit amet neque.
+        .col-md-3.wel_grid
+          = image_tag 'w1.jpg', class: 'img-responsive'
+          h5
+            a href="#"  Aliquam sit amet
+          p Morbi molestie nec ante ultrices. Cum sociis natoque penatibus et magnis dis parturient
+        .col-md-3.wel_grid
+          = image_tag 'w3.jpg', class: 'img-responsive'
+          h5
+            a href="#"  Aliquam sit amet
+          p Morbi molestie nec ante ultrices. Cum sociis natoque penatibus et magnis dis parturient
+        .col-md-3.wel_grid
+          = image_tag 'w2.jpg', class: 'img-responsive'
+          h5
+            a href="#"  Aliquam sit amet
+          p Morbi molestie nec ante ultrices. Cum sociis natoque penatibus et magnis dis parturient
+        .col-md-3.wel_grid
+          = image_tag 'w4.jpg', class: 'img-responsive'
+          h5
+            a href="#"  Aliquam sit amet
+          p Morbi molestie nec ante ultrices. Cum sociis natoque penatibus et magnis dis parturient
+        .clearfix
+        .more_info
+          a href="blog.html"  More Info....
+      .col-md-3.testimonal
+        h3 Testimonials
+        .testimnl-grid
+          a href="#" /
+          p Aenean ultrices commodo risus, id sollicitudin nunc commodo at. Sed sagittis, lacus id viverra eleifend, enim magna.
+          h5 John.Mr
+        .testimnl-grid
+          a href="#" /
+          p Aenean ultrices commodo risus, id sollicitudin nunc commodo at. Sed sagittis, lacus id viverra eleifend, enim magna.
+          h5 John.Mr
+        .testimnl-grid
+          a href="#" /
+          p Aenean ultrices commodo risus, id sollicitudin nunc commodo at. Sed sagittis, lacus id viverra eleifend, enim magna.
+          h5 John.Mr
+      .clearfix
+/!
+.news
+  .container
+    h3 Top News
+    .event-grids
+      .col-md-4.event-grid
+        .date
+          h4 26
+          span 08/2012
+        .event-info
+          h5
+            a href="#"  Etiam malesuada feugiat rutrum purus quis vulputate.
+          p
+            | Praesent sagittis in enim vel cursus. Aenean velit ante, maximus ac placerat at,
+            | volutpat et orci. Aliquam eu tellus orci.
+        .clearfix
+      .col-md-4.event-grid
+        .date
+          h4 24
+          span 06/2012
+        .event-info
+          h5
+            a href="#"  Etiam malesuada feugiat rutrum purus quis vulputate.
+          p
+            | Praesent sagittis in enim vel cursus. Aenean velit ante, maximus ac placerat at,
+            | volutpat et orci. Aliquam eu tellus orci.
+        .clearfix
+      .col-md-4.event-grid
+        .date
+          h4 20
+          span 04/2012
+        .event-info
+          h5
+            a href="#"  Etiam malesuada feugiat rutrum purus quis vulputate.
+          p
+            | Praesent sagittis in enim vel cursus. Aenean velit ante, maximus ac placerat at,
+            | volutpat et orci. Aliquam eu tellus orci.
+        .clearfix
+      .clearfix
+/!
+.footer
+  .container
+    .ftr-sec
+      .col-md-4.ftr-grid
+        h3 Text Module
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut odio ut quam convallis ultricies. Morbi rutrum lectus tortor. Cras vitae semper mi, et feugiat dolor.
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut odio ut quam convallis ultricies. Morbi rutrum lectus tortor. Cras vitae semper mi, et feugiat dolor.
+      .col-md-4.ftr-grid2
+        h3 Pages
+        ul
+          li
+            a href="index.html"
+              span
+              | Home
+          li
+            a href="about.html"
+              span
+              | About
+          li
+            a href="program.html"
+              span
+              | Programs
+          li
+            a href="blog.html"
+              span
+              | Blog
+          li
+            a href="gallery.html"
+              span
+              | Gallery
+          li
+            a href="contact.html"
+              span
+              | Contact
+      .col-md-4.ftr-grid3
+        h3 Quick links
+        ul
+          li
+            a href="about.html"
+              span
+              | History
+          li
+            a href="about.html"
+              span
+              | Departments
+          li
+            a href="gallery.html"
+              span
+              | Services
+          li
+            a href="blog.html"
+              span
+              | Guidancs
+          li
+            a href="about.html"
+              span
+              | Team
+          li
+            a href="contact.html"
+              span
+              | Contact
+      .clearfix
+/!
+.copywrite
+  .container
+    p
+      | Copyright © 2015 University. All rights reserved | Design by
+      a href="http://w3layouts.com"  W3layouts

@@ -1,0 +1,87 @@
+.banner
+  .header
+    .logo
+      a href="index.html"
+        = image_tag 'logo.jpg'
+    .top-menu
+      span.menu
+      ul.navig
+        li.active
+          a href="index.html"  Home
+        li
+          a href="about.html"  Metodologia
+        li
+          a href="program.html"  Programs
+        li
+          a href="blog.html"  Blog
+        li
+          a href="gallery.html"  Gallery
+        li
+          a href="contact.html"  Contact
+    .clearfix
+  - if controller_name == 'pages' && action_name == 'index'
+    .slider
+      .caption
+        .container
+          .callbacks_container
+            ul#slider.rslides
+              li
+                h3 Nam eget erat condimentum, gravida felis vel feugiat nisi
+              li
+                h3 Quisque egestas mi tellus porta bibendum dignissim euismod.
+              li
+                h3 Aenean nec enim pharetra felis malesuada scelerisque eget at felis.
+            .clearfix
+    .banner-grids
+      .container
+        .col-md-4.banner-grid
+          h3 Método 1
+          .banner-grid-sec
+            .grid_info
+              .blg-pic
+                = image_tag 'm1.jpg', class: 'img-responsive'
+              .blg-pic-info
+                h4
+                  a href="#"  Vivamus tempus ligula
+                p Aliquam sem velit, rhoncus sed arcu at curabitur et erat eu viverra.
+              .clearfix
+            .grid_info
+              .blg-pic
+                = image_tag 'm2.jpg', class: 'img-responsive'
+              .blg-pic-info
+                h4
+                  a href="#"  Vivamus tempus ligula
+                p Aliquam sem velit, rhoncus sed arcu at curabitur et erat eu viverra.
+              .clearfix
+            .more
+              a href="blog.html"  See more from the Blog
+        .col-md-4.banner-grid
+          h3 Método 2
+          .banner-grid-sec
+            .news-grid
+              h4
+                a href="#"  Vivamus tempus ligula
+              p Aliquam sem velit, rhoncus sed arcu eu viverra.
+            .news-grid
+              h4
+                a href="#"  Vivamus tempus ligula
+              p Aliquam sem velit, rhoncus sed arcu eu viverra.
+            .news-grid
+              h4
+                a href="#"  Vivamus tempus ligula
+              p Aliquam sem velit, rhoncus sed arcu eu viverra.
+            .news-grid
+              h4
+                a href="#"  Vivamus tempus ligula
+              p Aliquam sem velit, rhoncus sed arcu eu viverra.
+        .col-md-4.banner-grid
+          h3 Questionário
+          .banner-grid-sec.news_sec
+            .news-ltr
+              h4
+                a href="#"  Pellentesque sed arcu lacinia
+              p Aliquam sem velit, rhoncus sed arcu eu viverra. Suspendisse lacus posuere ultricies turpis.
+            form
+              input placeholder=("Email Address*") required="" type="text" /
+              input type="submit" value="SEND" /
+      .clearfix

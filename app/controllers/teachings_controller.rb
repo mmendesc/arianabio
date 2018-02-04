@@ -21,6 +21,13 @@ class TeachingsController < ApplicationController
   def edit
   end
 
+  def topics
+    @teachings = []
+    Teaching.all.each do |teaching|
+      @teachings << teaching if teaching.topics.split(',').include?(params[:id])
+    end
+  end
+
   # POST /teachings
   # POST /teachings.json
   def create

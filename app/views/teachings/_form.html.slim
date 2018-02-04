@@ -1,0 +1,26 @@
+= form_with(model: teaching, local: true) do |form|
+  - if teaching.errors.any?
+    #error_explanation
+      h2
+        = pluralize(teaching.errors.count, "error")
+        | prohibited this teaching from being saved:
+      ul
+        - teaching.errors.full_messages.each do |message|
+          li= message
+  .field
+    = form.label :link
+    = form.text_field :link, id: :teaching_link
+  .field
+    = form.label :category_id
+    = form.collection_select :category_id, Category.all , :id,:title, {prompt: "Selecione a categoria"}, required: true
+  .field
+    = form.label :title
+    = form.text_field :title, id: :teaching_title
+  .field
+    = form.label :unity
+    = form.text_field :unity, id: :teaching_unity
+  .field
+    = form.label :topics
+    = form.text_field :topics, id: :teaching_topics
+  .actions
+    = form.submit

@@ -1,4 +1,4 @@
-.banner
+div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
   .header
     .logo
       a href="index.html"
@@ -7,11 +7,11 @@
       span.menu
       ul.navig
         li.active
-          a href="index.html"  Home
+          a href="/"  Home
         li
-          a href="about.html"  Metodologia
+          a href="/strategic"  Sobre
         li
-          a href="program.html"  Programs
+          a href="/curriculum"  Parâmetros Curriculares
         li
           a href="blog.html"  Blog
         li

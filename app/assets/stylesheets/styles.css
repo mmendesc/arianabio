@@ -1,0 +1,31 @@
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center td {
+  text-align: left;
+}
+
+.source {
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content-text {
+  margin-bottom: 10px;
+}
+
+.unity td {
+  text-align: left;
+}
+
+.unity li {
+  margin-left: 10px;
+}
+
+.unity ul li {
+  list-style-type: none;
+}

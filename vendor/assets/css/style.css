@@ -41,7 +41,7 @@ h1.b1, h2.b2, h3.b3 {
 }
 /*-- banner --*/
 .banner{
-	background:url(banner.jpg) no-repeat;
+	background: url("banner.jpg") no-repeat;
 	background-size:cover;
 	min-height:835px;
 }
@@ -448,7 +448,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 /*--about--*/
 .banner2{
-	background:url(banner.jpg) no-repeat;
+	background: url("banner.jpg") no-repeat;
 	background-size:cover;
 	min-height:270px;
 }

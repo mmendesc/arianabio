@@ -9,15 +9,11 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
         li.active
           a href="/"  Home
         li
-          a href="/strategic"  Sobre
-        li
           a href="/curriculum"  Parâmetros Curriculares
         li
-          a href="blog.html"  Blog
+          a href="/methodology"  Estratégias Metodológicas
         li
-          a href="gallery.html"  Gallery
-        li
-          a href="contact.html"  Contact
+          a href="/about"  Sobre
     .clearfix
   - if controller_name == 'pages' && action_name == 'index'
     .slider

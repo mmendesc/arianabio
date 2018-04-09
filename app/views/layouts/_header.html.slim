@@ -7,7 +7,7 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
       span.menu
       ul.navig
         li.active
-          a href="/"  Home
+          a href="/"  Inicio
         li
           a href="/curriculum"  Parâmetros Curriculares
         li
@@ -31,28 +31,22 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
     .banner-grids
       .container
         .col-md-4.banner-grid
-          h3 Método 1
+          h3 Busca por Título
           .banner-grid-sec
             .grid_info
               .blg-pic
                 = image_tag 'm1.jpg', class: 'img-responsive'
               .blg-pic-info
                 h4
-                  a href="#"  Vivamus tempus ligula
-                p Aliquam sem velit, rhoncus sed arcu at curabitur et erat eu viverra.
-              .clearfix
-            .grid_info
-              .blg-pic
-                = image_tag 'm2.jpg', class: 'img-responsive'
-              .blg-pic-info
-                h4
-                  a href="#"  Vivamus tempus ligula
-                p Aliquam sem velit, rhoncus sed arcu at curabitur et erat eu viverra.
+                  a href="#"  Digite abaixo
+                = form_tag search_by_title_path, method: 'get', id: 'search-title' do
+                  = text_field_tag :title, params[:title], class: 'form-control'
+                  = button_tag('Pesquisar', class: 'btn btn-primary')
               .clearfix
             .more
               a href="blog.html"  See more from the Blog
         .col-md-4.banner-grid
-          h3 Método 2
+          h3 Busca por Categoria
           .banner-grid-sec
             .news-grid
               h4

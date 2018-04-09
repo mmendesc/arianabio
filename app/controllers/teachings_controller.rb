@@ -68,6 +68,14 @@ class TeachingsController < ApplicationController
     end
   end
 
+  def search_by_title
+    @teachings = Teaching.where("title ilike ?", "%#{params[:title]}%")
+
+    respond_to do |format|
+      format.js
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_teaching

@@ -2,123 +2,15 @@
 /!
 .welcome
   .container
-    h2 Escolha a baixo o metódo que deseja
+    h2.method-table-title Escolha a baixo o metódo que deseja
     .welcm_sec
       .col-md-12
-        table.table
+        table.table#methods-table
           thead.thead-dark
             tr
               th scope="col" Numero
               th scope="col" Titulo
           tbody
-            = render 'methods'
+            = render 'methods', teachings: @teachings
 
       .clearfix
-/!
-.news
-  .container
-    h3 Top News
-    .event-grids
-      .col-md-4.event-grid
-        .date
-          h4 26
-          span 08/2012
-        .event-info
-          h5
-            a href="#"  Etiam malesuada feugiat rutrum purus quis vulputate.
-          p
-            | Praesent sagittis in enim vel cursus. Aenean velit ante, maximus ac placerat at,
-            | volutpat et orci. Aliquam eu tellus orci.
-        .clearfix
-      .col-md-4.event-grid
-        .date
-          h4 24
-          span 06/2012
-        .event-info
-          h5
-            a href="#"  Etiam malesuada feugiat rutrum purus quis vulputate.
-          p
-            | Praesent sagittis in enim vel cursus. Aenean velit ante, maximus ac placerat at,
-            | volutpat et orci. Aliquam eu tellus orci.
-        .clearfix
-      .col-md-4.event-grid
-        .date
-          h4 20
-          span 04/2012
-        .event-info
-          h5
-            a href="#"  Etiam malesuada feugiat rutrum purus quis vulputate.
-          p
-            | Praesent sagittis in enim vel cursus. Aenean velit ante, maximus ac placerat at,
-            | volutpat et orci. Aliquam eu tellus orci.
-        .clearfix
-      .clearfix
-/!
-.footer
-  .container
-    .ftr-sec
-      .col-md-4.ftr-grid
-        h3 Text Module
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut odio ut quam convallis ultricies. Morbi rutrum lectus tortor. Cras vitae semper mi, et feugiat dolor.
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut odio ut quam convallis ultricies. Morbi rutrum lectus tortor. Cras vitae semper mi, et feugiat dolor.
-      .col-md-4.ftr-grid2
-        h3 Pages
-        ul
-          li
-            a href="index.html"
-              span
-              | Home
-          li
-            a href="about.html"
-              span
-              | About
-          li
-            a href="program.html"
-              span
-              | Programs
-          li
-            a href="blog.html"
-              span
-              | Blog
-          li
-            a href="gallery.html"
-              span
-              | Gallery
-          li
-            a href="contact.html"
-              span
-              | Contact
-      .col-md-4.ftr-grid3
-        h3 Quick links
-        ul
-          li
-            a href="about.html"
-              span
-              | History
-          li
-            a href="about.html"
-              span
-              | Departments
-          li
-            a href="gallery.html"
-              span
-              | Services
-          li
-            a href="blog.html"
-              span
-              | Guidancs
-          li
-            a href="about.html"
-              span
-              | Team
-          li
-            a href="contact.html"
-              span
-              | Contact
-      .clearfix
-/!
-.copywrite
-  .container
-    p
-      | Copyright © 2015 University. All rights reserved | Design by
-      a href="http://w3layouts.com"  W3layouts

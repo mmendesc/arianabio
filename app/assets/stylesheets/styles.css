@@ -29,3 +29,7 @@
 .unity ul li {
   list-style-type: none;
 }
+
+.method-row:hover {
+  border-left: 1px solid #000;
+}

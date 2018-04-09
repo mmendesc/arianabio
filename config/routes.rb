@@ -7,5 +7,8 @@ Rails.application.routes.draw do
   get '/about' => "pages#about", as: :about
   get '/curriculum' => "pages#curriculum", as: :curriculum
   get '/methodology' => 'pages#methodology', as: :methodology
+
+  # search routes
+  get '/search_by_title' => "teachings#search_by_title", as: :search_by_title
   root to: 'pages#index'
 end

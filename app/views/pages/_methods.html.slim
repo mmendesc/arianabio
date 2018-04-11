@@ -1,4 +1,4 @@
-- unities.each_with_index do |unity,i|
+- unities.each do |unity|
   tr.method-row
-    td = link_to "Método #{i + 1}", topics_path(id: unity.position)
+    td = link_to "Método #{unity.position}", topics_path(id: unity.position)
     td #{unity.name}

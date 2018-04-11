@@ -37,7 +37,7 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
               h4
                 a href="#"  Pesquisa
               p Busque pelo titulo dos métodos
-              = form_tag search_by_title_path, method: 'get', id: 'search-title' do
+              = form_tag search_by_title_path, method: 'get', remote: true, id: 'search-title' do
                 = text_field_tag :title, params[:title], class: 'form-control'
                 = button_tag('Pesquisar', class: 'btn btn-primary')
               .clearfix

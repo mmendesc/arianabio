@@ -51,3 +51,24 @@ Teaching.create!([
   {link: "https://www.flipsnack.com/Eveli/revista-gen-tica-na-escola-volume-12-n-mero-2.html?p=66", category_id: 4, title: "OS GENES DE COLORAÇÃO MC1R E ASIP COMO MODELOS PARA O ENSINO DE GENÉTICA: dominância e interação gênica", views: nil, unity: "1", topics: "2,3,5"},
   {link: "https://www.flipsnack.com/Eveli/revista-genetica-na-escola-volume-1-numero-2-2006.html?p=4", category_id: 2, title: "O ÓLEO DE LORENZO: O USO DO CINEMA PARA CONTEXTUALIZAR O ENSINO DE GENÉTICA E DISCUTIR A CONSTRUÇÃO DO CONHECIMENTO CIENTÍFICO", views: nil, unity: "1,2,3,4", topics: "2,5,6,8,11,12,16,17,18,19"}
 ])
+Unity.create!([
+  {name: "Listar várias características humanas ou de animais e plantas, distinguindo as hereditárias das congênitas e adquiridas.", position: 1},
+  {name: "Identificar, a partir de resultados de cruzamentos, os princípios básicos que regem a transmissão de características hereditárias e aplicá-los para interpretar o surgimento de determinadas características.", position: 2},
+  {name: "Utilizar noções básicas de probabilidade para prever resultados de cruzamentos e para resolver problemas envolvendo características diversas.", position: 3},
+  {name: "Analisar textos históricos para identificar concepções pré-mendelianas sobre a hereditariedade.", position: 4},
+  {name: "Identificar e utilizar os códigos usados para representar as características genéticas em estudo.", position: 5},
+  {name: "Construir heredogramas a partir de dados levantados pelos alunos (junto a familiares ou conhecidos) sobre a transmissão de certas características hereditárias.", position: 6},
+  {name: "Levantar dados sobre as características que historicamente são consideradas para definir os agrupamentos raciais humanos em caucasóides, negróides e orientais, identificando-as como correspondentes a apenas uma fração mínima do genoma humano.", position: 7},
+  {name: "Analisar aspectos genéticos do funcionamento do corpo humano como alguns distúrbios metabólicos (albinismo, fenilcetonúria), ou os relacionados aos antígenos e anticorpos, como os grupos sanguíneos e suas incompatibilidades, transplantes e doenças auto-imunes.", position: 8},
+  {name: "Distinguir uma célula cancerosa de uma normal, apontando suas anomalias genéticas, além de alterações morfológicas e metabólicas.", position: 9},
+  {name: "Identificar fatores ambientais – vírus, radiações e substâncias químicas – que aumentam o risco de desenvolver câncer e medidas que podem reduzir esses riscos, como limitar a exposição à luz solar.", position: 10},
+  {name: "Avaliar a importância do aconselhamento genético, analisando suas finalidades, o acesso que a população tem a esses serviços e seus custos.", position: 11},
+  {name: "Identificar as técnicas moleculares utilizadas para a detecção precoce de doenças genéticas, seus custos, levantando informações junto a profissionais e serviços de saúde.", position: 12},
+  {name: "Identificar o papel da terapia gênica no tratamento de doenças genéticas e seu uso na medicina brasileira, pesquisando textos ou entrevistando profissionais da área.", position: 13},
+  {name: "Reconhecer a importância dos testes de DNA nos casos de determinação da paternidade, investigação criminal e identificação de indivíduos.", position: 14},
+  {name: "Compreender a natureza dos projetos genomas, especialmente os existentes no país, listando seus objetivos como identificação dos genes, da sequência do DNA e armazenamento dessas informações em bancos de dados.", position: 15},
+  {name: "Reconhecer a importância dos procedimentos éticos no uso da informação genética para promover a saúde do ser humano sem ferir a sua privacidade e sua dignidade.", position: 16},
+  {name: "Posicionar-se perante o uso das terapias genéticas, distinguindo aquelas que são eticamente recomendadas daquelas que devem ser proibidas.", position: 17},
+  {name: "Avaliar a importância do aspecto econômico envolvido na utilização da manipulação genética em saúde: o problema das patentes biológicas e a exploração comercial das descobertas das tecnologias de DNA.", position: 18},
+  {name: "Posicionar-se perante a polêmica sobre o direito de propriedade das descobertas relativas ao genoma humano, analisando argumentos de diferentes profissionais.", position: 19}
+])

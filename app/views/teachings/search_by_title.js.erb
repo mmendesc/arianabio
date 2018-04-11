@@ -1,1 +1,1 @@
-$('#methods-table').remove();
+$('#methods-table').html("<%= j render(partial: 'pages/methods', locals: { unities: @unities} ) %>")

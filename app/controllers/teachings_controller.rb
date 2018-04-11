@@ -70,6 +70,9 @@ class TeachingsController < ApplicationController
 
   def search_by_title
     @teachings = Teaching.where("title ilike ?", "%#{params[:title]}%")
+    unity_ids = @teachings.collect {|x| x.unity.split(',')}.flatten.uniq.sort
+                          .map(&:to_i)
+    @unities = Unity.find(unity_ids)
 
     respond_to do |format|
       format.js

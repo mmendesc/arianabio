@@ -32,16 +32,14 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
       .container
         .col-md-4.banner-grid
           h3 Busca por Título
-          .banner-grid-sec
-            .grid_info
-              .blg-pic
-                = image_tag 'm1.jpg', class: 'img-responsive'
-              .blg-pic-info
-                h4
-                  a href="#"  Digite abaixo
-                = form_tag search_by_title_path, method: 'get', id: 'search-title' do
-                  = text_field_tag :title, params[:title], class: 'form-control'
-                  = button_tag('Pesquisar', class: 'btn btn-primary')
+          .banner-grid-sec.news-sec
+            .news-ltr
+              h4
+                a href="#"  Pesquisa
+              p Busque pelo titulo dos métodos
+              = form_tag search_by_title_path, method: 'get', id: 'search-title' do
+                = text_field_tag :title, params[:title], class: 'form-control'
+                = button_tag('Pesquisar', class: 'btn btn-primary')
               .clearfix
             .more
               a href="blog.html"  See more from the Blog

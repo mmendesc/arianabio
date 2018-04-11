@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def index
-    @teachings = Teaching.all
+    @unities = Unity.all
   end
 
   def about

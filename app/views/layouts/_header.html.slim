@@ -45,23 +45,17 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
               a href="blog.html"  See more from the Blog
         .col-md-4.banner-grid
           h3 Busca por Categoria
-          .banner-grid-sec
-            .news-grid
+          .banner-grid-sec.news-sec
+            .news-ltr
               h4
-                a href="#"  Vivamus tempus ligula
-              p Aliquam sem velit, rhoncus sed arcu eu viverra.
-            .news-grid
-              h4
-                a href="#"  Vivamus tempus ligula
-              p Aliquam sem velit, rhoncus sed arcu eu viverra.
-            .news-grid
-              h4
-                a href="#"  Vivamus tempus ligula
-              p Aliquam sem velit, rhoncus sed arcu eu viverra.
-            .news-grid
-              h4
-                a href="#"  Vivamus tempus ligula
-              p Aliquam sem velit, rhoncus sed arcu eu viverra.
+                a href="#"  Pesquisa
+              p Busque pela categoria dos métodos
+              = form_tag search_by_category_path, method: 'get', remote: true, id: 'search-category' do
+                = select_tag :category_id, options_for_select(Category.all.pluck(:title,:id)), include_blank: 'Selecione uma categoria', class: 'form-control'
+                = button_tag('Pesquisar', class: 'btn btn-primary')
+              .clearfix
+            .more
+              a href="blog.html"  See more from the Blog
         .col-md-4.banner-grid
           h3 Questionário
           .banner-grid-sec.news_sec

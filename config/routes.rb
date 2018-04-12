@@ -11,5 +11,6 @@ Rails.application.routes.draw do
 
   # search routes
   get '/search_by_title' => "teachings#search_by_title", as: :search_by_title
+  get '/search_by_category' => "teachings#search_by_category", as: :search_by_category
   root to: 'pages#index'
 end

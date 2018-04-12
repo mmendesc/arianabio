@@ -80,6 +80,14 @@ class TeachingsController < ApplicationController
     end
   end
 
+  def search_by_category
+    @teachings = Teaching.where(category_id: params[:category_id])
+
+    respond_to do |format|
+      format.js
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_teaching

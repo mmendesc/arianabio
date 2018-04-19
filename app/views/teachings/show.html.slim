@@ -1,0 +1,8 @@
+.row
+  .col-md-6
+    h1 #{@teaching.title}
+    h4 Categoria: #{@teaching.category.title}
+  .col-md-6.text-center
+    .thumbnail
+      iframe.link-preview src="#{@teaching.link}" frameborder="0" sandbox="allow-same-origin allow-scripts allow-pointer-lock"
+

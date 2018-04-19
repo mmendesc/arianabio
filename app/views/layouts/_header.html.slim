@@ -38,7 +38,7 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
                 a href="#"  Pesquisa
               p Busque pelo titulo dos métodos
               = form_tag search_by_title_path, method: 'get', remote: true, id: 'search-title' do
-                = text_field_tag :title, params[:title], class: 'form-control'
+                = select_tag :topic_id, options_for_select(Unity.all.pluck(:name,:id)), include_blank: 'Selecione um método', class: 'form-control'
                 = button_tag('Pesquisar', class: 'btn btn-primary')
               .clearfix
             .more

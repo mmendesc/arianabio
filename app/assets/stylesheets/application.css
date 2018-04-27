@@ -13,5 +13,7 @@
  *= require_tree .
  *= require css/bootstrap
  *= require css/style
+ *= require dependencies
+ *= require toastr
  *= require_self
  */

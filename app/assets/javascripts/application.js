@@ -13,7 +13,6 @@
 //= require rails-ujs
 //= require turbolinks
 //= require js/jquery.min
-//= require toastr
 //= require js/bootstrap
 //= require js/responsiveslides.min
 //= require_tree .

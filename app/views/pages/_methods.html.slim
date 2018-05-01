@@ -1,4 +1,4 @@
 - unities.each do |unity|
   tr.method-row
-    td = link_to "Método #{unity.position}", topics_path(id: unity.position)
-    td #{unity.name}
+    td = link_to "Método #{unity.position}", topics_path(id: unity.position), class: 'no-background'
+    td = link_to "#{unity.name}" , topics_path(id: unity.position), class: 'no-background'

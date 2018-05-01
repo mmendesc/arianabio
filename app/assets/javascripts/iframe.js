@@ -14,8 +14,12 @@ $(document).ready(function(){
     "extendedTimeOut": 0,
     "positionClass": "toast-bottom-right",
     "onclick": function(){
-      window.open('https://www.google.com');
+      window.open('https://www.survio.com/survey/d/H9A9R4K0B7G9F1N2F');
     }
   }
-  toastr.success('Nos ajude preenchendo nossa pesquisa.');
+
+  setTimeout(function(){
+    toastr.success('Nos ajude preenchendo nossa pesquisa.');
+  },5000);
+
 });

@@ -1,2 +1,10 @@
-- @teachings.each do |teaching|
-  h2 = link_to "#{teaching.title}",teaching
+.row
+  .col-md-6.col-md-offset-3 style="margin-top:50px;"
+    table
+      thead
+        tr
+          th Método
+      tbody
+        - @teachings.each do |teaching|
+          tr
+            td = link_to "#{teaching.title}",teaching, class: 'no-backgroud'

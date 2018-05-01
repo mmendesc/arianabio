@@ -41,8 +41,6 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
                 = select_tag :topic_id, options_for_select(Unity.all.pluck(:name,:id)), include_blank: 'Selecione um método', class: 'form-control'
                 = button_tag('Pesquisar', class: 'btn btn-primary')
               .clearfix
-            .more
-              a href="blog.html"  See more from the Blog
         .col-md-4.banner-grid
           h3 Busca por Categoria
           .banner-grid-sec.news-sec
@@ -54,16 +52,10 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
                 = select_tag :category_id, options_for_select(Category.all.pluck(:title,:id)), include_blank: 'Selecione uma categoria', class: 'form-control'
                 = button_tag('Pesquisar', class: 'btn btn-primary')
               .clearfix
-            .more
-              a href="blog.html"  See more from the Blog
         .col-md-4.banner-grid
           h3 Questionário
-          .banner-grid-sec.news_sec
+          .banner-grid-sec.news-sec
             .news-ltr
               h4
-                a href="#"  Pellentesque sed arcu lacinia
-              p Aliquam sem velit, rhoncus sed arcu eu viverra. Suspendisse lacus posuere ultricies turpis.
-            form
-              input placeholder=("Email Address*") required="" type="text" /
-              input type="submit" value="SEND" /
+                a.survey-link href="https://www.survio.com/survey/d/H9A9R4K0B7G9F1N2F" target="_blank"  Preencha nossa pesquisa
       .clearfix

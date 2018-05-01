@@ -1,16 +1,7 @@
-
-/!
 .welcome
-  .container
-    h2.method-table-title Escolha a baixo o metódo que deseja
+  .container style="display:none"
+    h2.method-table-title
     .welcm_sec
       .col-md-12
         table.table#methods-table
-          thead.thead-dark
-            tr
-              th scope="col" Numero
-              th scope="col" Titulo
-          tbody
-            = render 'methods', unities: @unities
-
       .clearfix

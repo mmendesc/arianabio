@@ -6,6 +6,7 @@ $(document).ready(function(){
       data: {topic_id: $('select[name=topic_id]').val(),format: 'js'},
       success: function(){
         $('.method-table-title').text('Métodos encontrados nas categorias abaixo')
+        $('.welcome .container').show();
       }
     })
   })
@@ -17,6 +18,7 @@ $(document).ready(function(){
       data: {title: $("input[name='category_id']").val(),format: 'js'},
       success: function(){
         $('.method-table-title').text('Métodos encontrados nas categorias abaixo')
+        $('.welcome .container').show();
       }
     })
   })

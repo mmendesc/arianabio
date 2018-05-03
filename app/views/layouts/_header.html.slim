@@ -9,11 +9,11 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
         li.active
           a href="/"  Inicio
         li
+          a href="/about"  Sobre
+        li
           a href="/curriculum"  Parâmetros Curriculares
         li
           a href="/methodology"  Estratégias Metodológicas
-        li
-          a href="/about"  Sobre
     .clearfix
   - if controller_name == 'pages' && action_name == 'index'
     .slider
@@ -22,11 +22,9 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
           .callbacks_container
             ul#slider.rslides
               li
-                h3 Nam eget erat condimentum, gravida felis vel feugiat nisi
+                h3 Estratégia Genética
               li
-                h3 Quisque egestas mi tellus porta bibendum dignissim euismod.
-              li
-                h3 Aenean nec enim pharetra felis malesuada scelerisque eget at felis.
+                h3 Um lugar para modificar suas aulas.
             .clearfix
     .banner-grids
       .container
@@ -38,7 +36,6 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
                 a href="#"  Pesquisa
               p Busque pelo titulo dos métodos
               = form_tag search_by_title_path, method: 'get', remote: true, id: 'search-title' do
-                = select_tag :topic_id, options_for_select(Unity.all.pluck(:name,:id)), include_blank: 'Selecione um método', class: 'form-control'
                 = button_tag('Pesquisar', class: 'btn btn-primary')
               .clearfix
         .col-md-4.banner-grid

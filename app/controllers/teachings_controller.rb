@@ -10,6 +10,8 @@ class TeachingsController < ApplicationController
   # GET /teachings/1
   # GET /teachings/1.json
   def show
+    views = @teaching.views.nil? ? 1 : @teaching.views + 1
+    @teaching.update(views: views)
   end
 
   # GET /teachings/new
@@ -69,10 +71,7 @@ class TeachingsController < ApplicationController
   end
 
   def search_by_title
-    @teachings = []
-    Teaching.all.each do |teaching|
-      @teachings << teaching if teaching.topics.split(',').include?(params[:topic_id])
-    end
+    @unities = Unity.all
 
     respond_to do |format|
       format.js

@@ -7,6 +7,7 @@ $(document).ready(function(){
       success: function(){
         $('.method-table-title').text('Métodos encontrados nas categorias abaixo')
         $('.welcome .container').show();
+        $("html, body").animate({ scrollTop: $('.welcome').offset().top }, 1000);
       }
     })
   })
@@ -19,6 +20,7 @@ $(document).ready(function(){
       success: function(){
         $('.method-table-title').text('Métodos encontrados nas categorias abaixo')
         $('.welcome .container').show();
+        $("html, body").animate({ scrollTop: $('.welcome').offset().top }, 1000);
       }
     })
   })

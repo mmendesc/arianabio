@@ -88,3 +88,7 @@ body {
 .margin-top-teaching {
   margin-top: 20px;
 }
+
+select {
+  text-overflow: ellipsis;
+}

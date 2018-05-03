@@ -80,7 +80,6 @@ class TeachingsController < ApplicationController
 
   def search_by_category
     @teachings = Teaching.where(category_id: params[:category_id])
-
     respond_to do |format|
       format.js
     end

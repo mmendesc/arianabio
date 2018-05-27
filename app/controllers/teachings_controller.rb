@@ -79,7 +79,6 @@ class TeachingsController < ApplicationController
   end
 
   def search_by_category
-    binding.pry
     @teachings = Teaching.where(category_id: params[:category_id])
     respond_to do |format|
       format.js

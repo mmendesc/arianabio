@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).on('turbolinks:load',function(){
   $('#search-title').submit(function(e){
     e.preventDefault();
     $.ajax ({

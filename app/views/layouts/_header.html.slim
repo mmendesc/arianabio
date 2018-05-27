@@ -7,7 +7,7 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
       span.menu
       ul.navig
         li.active
-          a href="/"  Inicio
+          a href="/"  Início
         li
           a href="/about"  Sobre
         li
@@ -34,8 +34,9 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
             .news-ltr
               h4
                 a href="#"  Pesquisa
-              p Busque pelo titulo dos métodos
+              p Busque pelo título dos métodos
               = form_tag search_by_title_path, method: 'get', remote: true, id: 'search-title' do
+                = select_tag :topic_id, options_for_select(Unity.all.pluck(:name,:id)), include_blank: 'Selecione um método', class: 'form-control'
                 = button_tag('Pesquisar', class: 'btn btn-primary')
               .clearfix
         .col-md-4.banner-grid

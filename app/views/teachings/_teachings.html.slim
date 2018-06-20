@@ -1,4 +1,4 @@
 - teachings.each do |teaching|
   tr.method-row
-    td = link_to "Métodos: #{teaching.topics}", teaching_path(id: teaching.id)
+    td = link_to "Habilidades: #{teaching.topics}", teaching_path(id: teaching.id)
     td = link_to "#{teaching.title}" , teaching_path(id: teaching.id), class: 'no-background'

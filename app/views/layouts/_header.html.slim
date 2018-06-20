@@ -29,12 +29,12 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
     .banner-grids
       .container
         .col-md-4.banner-grid
-          h3 Busca por Título
+          h3 Busque por Habilidade do PCN
           .banner-grid-sec.news-sec
             .news-ltr
               h4
                 a href="#"  Pesquisa
-              p Busque pelo título dos métodos
+              p Busque pelo título das habilidades
               = form_tag search_by_title_path, method: 'get', remote: true, id: 'search-title' do
                 = button_tag('Pesquisar', class: 'btn btn-primary')
               .clearfix
@@ -44,7 +44,7 @@ div class="#{current_page?(root_path) ? 'banner' : 'banner2'}"
             .news-ltr
               h4
                 a href="#"  Pesquisa
-              p Busque pela categoria dos métodos
+              p Busque pela categoria das habilidades
               = form_tag search_by_category_path, method: 'get', remote: true, id: 'search-category' do
                 = select_tag :category_id, options_for_select(Category.all.pluck(:title,:id)), include_blank: 'Selecione uma categoria', class: 'form-control'
                 = button_tag('Pesquisar', class: 'btn btn-primary')
